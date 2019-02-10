@@ -21,11 +21,11 @@ function setUserName() {
     myHeading.textContent = 'Caca, ' + myName;
 }
 
-if(!localStorage.getItem('name')){
+if(!localStorage.getItem('name')) {
     setUserName();
 } else {
     var storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Caca, ' + myName;
+  myHeading.textContent = 'Caca, ' + storedName;
 }
 
 myButton.onclick = function() {
